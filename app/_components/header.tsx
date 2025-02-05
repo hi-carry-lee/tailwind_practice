@@ -9,7 +9,7 @@ export default function Header() {
         <li>
           <Link href="#projects" />
         </li>
-        <li>Dark</li>
+        <li>Dark mode</li>
       </ul>
     </header>
   );
