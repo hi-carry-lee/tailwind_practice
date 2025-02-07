@@ -1,10 +1,10 @@
-# TailwindCSS Practice Collection
+# Why this project?
 
-This repository serves as a comprehensive collection of TailwindCSS projects, reimagined and implemented using Next.js. While working as a full-stack developer, I recognized the need to enhance my CSS skills, particularly in modern styling approaches.
+As a full-stack developer with 4 years of experience, you'd think I'd be pretty comfortable with CSS. But when I started working on my own projects, I realized CSS was actually my biggest stumbling block. Sure, some might suggest using AI to write CSS for me, but I understand one simple truth: I can't effectively use AI for something I don't understand myself.
 
-The projects are inspired by Brad Traversy's excellent TailwindCSS course on Udemy. Although the original course uses vanilla JavaScript, I've taken the initiative to rebuild these projects using Next.js, aligning them with my current focus on Next.js development.
+That's why I invested in two CSS courses on Udemy. Since I also wanted to improve my NextJS skills and get familiar with popular CSS tools, I created this project. Here, I'm rebuilding every case study using TailwindCSS and NextJS (though honestly, most cases don't really need JS - I'm using NextJS mainly to make it easier to add new features in the future).
 
-This collection represents both a learning journey and a practical implementation of advanced CSS concepts through TailwindCSS in a modern React framework.
+Through these small CSS projects, I aim to build a more comprehensive understanding of CSS. These projects will not only serve as inspiration for my future CSS work but also act as a practical reference guide when I'm working on professional projects.
 
 ## Getting Started
 

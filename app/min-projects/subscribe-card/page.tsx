@@ -31,7 +31,7 @@ function SubscribeCard() {
               <input
                 type="text"
                 placeholder="Enter you email address"
-                className="bg-slate-700 text-center rounded-sm p-2 placeholder:text-sm border border-slate-500 outline-0 placeholder:text-center md:placeholder:text-left"
+                className="bg-slate-700 text-center rounded-sm p-2 placeholder:text-sm border border-slate-500 outline-0 placeholder:text-center md:placeholder:text-left md:text-left"
               />
               <button className="px-5 py-3 bg-lime-500 text-gray-800 rounded-md md:p-4 hover:bg-lime-600 duration-300">
                 Subscribe

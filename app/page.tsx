@@ -14,6 +14,14 @@ export default function Home() {
             Subscribe Card
           </Link>
         </div>
+        <div>
+          <Link
+            href="/min-projects/price-card"
+            className="text-xl font-semibold bg-amber-200 p-4 rounded hover:bg-amber-400 transition duration-300"
+          >
+            Price Card
+          </Link>
+        </div>
       </div>
     </div>
   );
