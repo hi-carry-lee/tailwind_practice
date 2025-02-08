@@ -22,6 +22,14 @@ export default function Home() {
             Price Card
           </Link>
         </div>
+        <div>
+          <Link
+            href="/min-projects/product-model"
+            className="text-xl font-semibold bg-amber-200 p-4 rounded hover:bg-amber-400 transition duration-300"
+          >
+            Product Model
+          </Link>
+        </div>
       </div>
     </div>
   );

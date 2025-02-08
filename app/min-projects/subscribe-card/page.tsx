@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Card from "@/public/subscribe-card.jpg";
+import Card from "@/public/min-projects/subscribe-card.jpg";
 
 function SubscribeCard() {
   return (
