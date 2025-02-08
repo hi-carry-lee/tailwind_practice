@@ -3,13 +3,16 @@ import AppleWatch from "@/public/min-projects/apple-watch.jpg";
 import { HiOutlineShoppingCart, HiOutlineHeart } from "react-icons/hi2";
 
 /** 
- 1. the label with black background: in the small screen, it will expand to all the width;
+ 1. 1️⃣ the label with black background: in the small screen, it will expand to all the width;
     use a div to wrap it will solve this issue.
     I believe it's caused by the flex property.
 
- 2. about the button with blut background, I didn't follow the way that Instructor used, since it will shift the while content a little. the current approach has the same effect, and I believe it's more simple
+ 2. 2️⃣ about the button with blut background:
+    I didn't follow the Instructor's way, since it will shift the while content a little. the current approach has the same effect, and I believe it's more simple
 
- 3. tracking-wide: used to set up the distance between words
+ 3. 3️⃣ tracking-wide: used to set up the distance between words
+
+ 4. 4️⃣ how to add animation style
   */
 
 function ProductModelPage() {
