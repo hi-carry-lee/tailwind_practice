@@ -3,8 +3,14 @@ import {
   HiUser,
   HiOutlineCurrencyDollar,
 } from "react-icons/hi2";
-// existing problem:
-// 1. when shrink the brower window to some extend, the bottom of card 2 and 3 will become double wide, I don't know why
+/*
+1️⃣ Dividing line
+    using an empty div, add border to it.
+    if the width of border is thick, you can add border to one side, for example: border-b or border-t
+
+2️⃣ 
+
+*/
 
 function PriceCards() {
   return (

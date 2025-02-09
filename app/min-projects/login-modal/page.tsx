@@ -54,6 +54,7 @@ function LoginPage() {
           <p className="text-center mb-6 text-gray-500 text-md">
             or log in with
           </p>
+          {/* 🔥 since there is flex-col, so in the horizontal direction, the button will be stretch to fulfill its parent's width */}
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6">
             {/* 🔥On larger screens, the two buttons will appear side by side. By default, each button only takes up as much space as its content requires. However, we want these buttons to split the available width equally, so we apply the w-1/2 class to make each button occupy half of the total width*/}
             <button className="md:w-1/2 border px-6 py-3 flex justify-center items-center space-x-3 rounded-lg shadow-sm hover:-translate-y-1 hover:shadow-lg duration-300 ">
