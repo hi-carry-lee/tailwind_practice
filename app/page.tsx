@@ -38,6 +38,14 @@ export default function Home() {
             Image Gallery
           </Link>
         </div>
+        <div>
+          <Link
+            href="/min-projects/login-modal"
+            className="text-xl font-semibold bg-amber-200 p-4 rounded hover:bg-amber-400 transition duration-300"
+          >
+            Login Modal
+          </Link>
+        </div>
       </div>
     </div>
   );
