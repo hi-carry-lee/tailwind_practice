@@ -1,30 +1,78 @@
+import Link from "next/link";
+import SectionFour from "./section-four";
+import SectionOne from "./section-one";
+import SectionThree from "./section-three";
+import SectionTwo from "./section-two";
 import Image from "next/image";
-import LogoSvg from "@/public/clipboard/logo.svg";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaInstagram, FaTwitterSquare } from "react-icons/fa";
+import logo from "@/public/clipboard/logo.svg";
+// import BgDesktop from "@/public/clipboard/bg-header-desktop.png";
+// import BgMobile from "@/public/clipboard/bg-header-mobile.png";
 
 function Clipboard() {
   return (
-    <section id="hero">
-      <div className="max-w-5xl mx-auto text-center mb-40 px-10 pt-16">
-        <Image src={LogoSvg} alt="logo" className="mx-auto my-16" />
-        <h2 className="text-3xl font-bold mb-8 md:text-5xl">
-          A history of everything you copy
-        </h2>
-        {/* 1️⃣  */}
-        <p className="px-4 text-2xl text-gray-500 mb-8 max-w-3xl mx-auto">
-          Clipboard allows you to track and organize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
-        <div className="flex flex-col justify-center text-xl text-white md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-          {/* 2️⃣*/}
-          <button className="px-8 py-4 bg-cyan-500 rounded-full border-none">
-            Download for iOS
-          </button>
-          <button className="px-8 py-4 bg-blue-500 rounded-full border-none">
-            Download for Mac
-          </button>
+    <div
+      className="  
+      w-full min-h-screen  
+      bg-[url('/clipboard/bg-header-desktop.png')]  
+      bg-no-repeat  
+      bg-contain  
+      max-[576px]:bg-[url('/clipboard/bg-header-mobile.png')]  
+    "
+    >
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <footer className="py-8 bg-gray-100">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row md:gap-20 gap-4 items-center justify-center text-center">
+          <div className="w-16">
+            <Image src={logo} alt="logo" className="w-full" />
+          </div>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 flex-wrap max-w-lg">
+            <Link
+              href="#"
+              className="hover:text-cyan-500 text-gray-500 px-4 py-2"
+            >
+              FAQs
+            </Link>
+            <Link
+              href="#"
+              className="hover:text-cyan-500 text-gray-500 px-4 py-2"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              href="#"
+              className="hover:text-cyan-500 text-gray-500 px-4 py-2"
+            >
+              Install Guide
+            </Link>
+            <Link
+              href="#"
+              className="hover:text-cyan-500 text-gray-500 px-4 py-2"
+            >
+              Contact Us
+            </Link>
+            <Link href="#" className="hover:text-cyan-500 text-gray-500  py-2">
+              Press Kit
+            </Link>
+          </div>
+          <div className="flex justify-center items-center gap-8">
+            <Link href="#">
+              <IoLogoFacebook className="text-3xl hover:text-cyan-400" />
+            </Link>
+            <Link href="#" className="text-2xl hover:text-cyan-400">
+              <FaTwitterSquare />
+            </Link>
+            <Link href="#">
+              <FaInstagram className="text-2xl hover:text-cyan-400" />
+            </Link>
+          </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   );
 }
 
