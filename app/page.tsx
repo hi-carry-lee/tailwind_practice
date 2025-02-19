@@ -18,6 +18,7 @@ export default function Home() {
         </ProjectLink>
         <ProjectLink href="/min-projects/login-modal">Login Modal</ProjectLink>
         <ProjectLink href="/min-projects/clipboard">Clipboard</ProjectLink>
+        <ProjectLink href="/min-projects/loopstudios">LoopStudios</ProjectLink>
       </div>
     </div>
   );
