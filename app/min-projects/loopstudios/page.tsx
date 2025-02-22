@@ -6,6 +6,8 @@ FEATURES:
 4. in the small screen, we will use another colloction of images;
 */
 
+import CreationsFlex from "./creations-flex";
+import CreationsGrid from "./creations-grid";
 import Feature from "./feature";
 import Header from "./header";
 
@@ -25,7 +27,8 @@ function LoopStudios() {
       {/* feature section */}
       <Feature />
       {/* creation section */}
-
+      <CreationsFlex />
+      <CreationsGrid />
       {/* footer */}
     </>
   );

@@ -36,6 +36,8 @@ function ProductModelPage() {
           <div className="flex flex-col mb-2 space-y-6">
             <div>
               {/* why adding this div⭐⭐⭐ */}
+              {/* in flex layout, flex item will be stretch in cross asix, bu default it's vertical direction, when use flex-col, it's horizontal direction, here after using div, the label will not be stretch */}
+              {/* 👉another solution is useing self-start(it's align-self: start) instead of add div 👈*/}
               <label className="bg-black text-white text-sm rounded-full px-4 py-2">
                 Free Shipping
               </label>
