@@ -8,6 +8,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
+// create a reusable component here is not necessary, just for practing purpose;
 function Navigation({ navParam, ulParam, children }: Props) {
   return (
     <nav className={navParam}>
