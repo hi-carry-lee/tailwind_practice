@@ -18,17 +18,17 @@ import fisheyeMobile from "@/public/loopstudios/mobile/image-fisheye.jpg";
 
 /*
 ABOUT THE BUTTON
-1. the button on the top: display it in the big screen, hide it in small screen;
+1. the two buttons here: 
+  display it when in the big screen, hide it when in the small screen;
   the same to the bottom button;
   in the begining, I want to use the same button, but it seems this solution need more work to do;
+  use two buttons, and switch one of them based on the screen size;
 
-  header container is flex layout, in the small screen, the button will be stretch from left to right, and we don't want this effect, so we use a div to wrap it. 
-  then we need to use flex to adjust the button's position in the div based on the screen size 
-  <div className="flex justify-center md:justify-end">
-    <button className="px-10 py-3 uppercase border-2 border-black hover:text-white hover:bg-black font-semibold tracking-wider ">
-      see all
-    </button>
-  </div>
+2. layout the eight images;
+
+3. add text on top of image;
+
+4. add 
 
 ABOUT THE LETTER SPACING
 1. if the default value from TailWind CSS，you can define a new variable in the tailwind.config.js

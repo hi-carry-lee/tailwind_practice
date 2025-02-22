@@ -7,8 +7,9 @@ FEATURES:
 */
 
 import CreationsFlex from "./creations-flex";
-import CreationsGrid from "./creations-grid";
+// import CreationsGrid from "./creations-grid";
 import Feature from "./feature";
+import Footer from "./footer";
 import Header from "./header";
 
 /*
@@ -28,8 +29,9 @@ function LoopStudios() {
       <Feature />
       {/* creation section */}
       <CreationsFlex />
-      <CreationsGrid />
+      {/* <CreationsGrid /> */}
       {/* footer */}
+      <Footer />
     </>
   );
 }
