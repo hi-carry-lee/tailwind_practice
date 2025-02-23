@@ -5,25 +5,28 @@ import Navigation from "./navigation";
 import Link from "next/link";
 
 function Header() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
+  // the string need blank at the end, since it will join another string, if no blank, then some class of Tailwind css will not take effect;
   const base =
     "absolute w-6 h-[2px] bg-white ro top-0 left-0 rotate-0 transition-all duration-500 ";
   const hamburgerMenuTop =
-    base + `${isOpen ? "rotate-45 translate-x-[-6px] translate-y-[8px]" : ""}`;
+    base +
+    `${isOpen ? " rotate-45 translate-x-[-6px] translate-y-[8px] " : ""}`;
   const hamburgerMenuMiddle =
-    base + `${isOpen ? "hidden" : "translate-y-[8px]"}`;
+    base + `${isOpen ? " hidden " : " translate-y-[8px] "}`;
   const hamburgerMenuBottom =
     base +
     `${
       isOpen
-        ? "-rotate-45 translate-x-[-6px]  translate-y-[8px]"
-        : "translate-y-[16px]"
+        ? " translate-x-[-6px]  translate-y-[8px]  -rotate-45 "
+        : " translate-y-[16px] "
     }`;
-  const hamburger = `cursor-pointer w-6 h-6 transition-all duration-200 relative ${
-    isOpen ? "rotate-90" : ""
+  const hamburger = ` cursor-pointer w-6 h-6 transition-all duration-200 relative ${
+    isOpen ? " rotate-90 " : ""
   }`;
 
   function handleClick() {
+    console.log("click button");
     setIsOpen((cur) => !cur);
   }
 
