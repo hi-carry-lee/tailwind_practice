@@ -5,6 +5,21 @@ interface Props {
   container: string;
 }
 
+/* 
+1. why the horizontal line appear underneath the three boxes?
+  in the absolute positioning, the back elements will appear on top of the front elements;
+
+2. after using absolute, you can't use mx-auto to center it.
+  since it's out of document flow.
+
+3. in the beginning, I intended to use one div as the horizontal and vertical line,
+  rotate it when in the different screen size;
+  but actually using two line is easier.
+
+4. 
+
+*/
+
 function Advance({ container }: Props) {
   return (
     <>
@@ -17,13 +32,11 @@ function Advance({ container }: Props) {
             Track how your links are performing across the web with our advanced
             statistics dashboard.
           </p>
-        </div>
-      </section>
-      <section className="bg-gray-100 py-10">
-        <div className={`${container} px-3`}>
-          <div className="relative flex flex-col items-start px-6 md:flex-row md:gap-7">
+
+          {/* Features */}
+          <div className="relative flex flex-col md:flex-row items-start px-6 md:gap-7 mt-20">
             {/* horizontal line */}
-            <div className="hidden absolute top-24 w-10/12 left-16 h-3 bg-cyan-500 md:block"></div>
+            <div className="hidden absolute top-24 w-10/12 ml-16 h-3 bg-cyan-500 md:block"></div>
             {/* vertical line */}
             <div className="absolute w-2 left-1/2 h-full -ml-1 bg-cyan-500 md:hidden"></div>
 
