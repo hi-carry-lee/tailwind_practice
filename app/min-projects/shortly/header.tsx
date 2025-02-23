@@ -10,7 +10,7 @@ function Header({ container }: Props) {
   return (
     <header>
       <nav
-        className={`${container} relative mx-auto p-6 flex items-center justify-between`}
+        className={`${container} relative p-6 flex items-center justify-between`}
       >
         <div className="flex gap-20 items-center justify-center">
           <Image src={logo} alt="logo" />

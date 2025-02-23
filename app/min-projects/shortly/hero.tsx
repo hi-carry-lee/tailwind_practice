@@ -9,7 +9,7 @@ function Hero({ container }: Props) {
   return (
     <section>
       <div
-        className={`${container} mx-auto p-6 flex flex-col-reverse lg:flex-row mb-40 `}
+        className={`${container} p-6 flex flex-col-reverse lg:flex-row mb-40 `}
       >
         <div className="mt-20 flex flex-col justify-center items-center lg:justify-start w-full lg:max-w-1/2 lg:items-start">
           <h1 className="text-6xl font-bold w-full text-center lg:text-left lg:max-w-md mb-10">

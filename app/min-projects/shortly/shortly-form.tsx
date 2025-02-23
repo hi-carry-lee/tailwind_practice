@@ -12,7 +12,7 @@ function ShortlyForm() {
             Shorten It!
           </button>
         </div>
-        <div className="bg-white p-6 flex  flex-col md:flex-row justify-between items-center rounded-xl">
+        <div className="mx-6 bg-white p-6 flex  flex-col md:flex-row justify-between items-center rounded-xl">
           <p className="text-lg font-semibold text-gray-500">
             https://frontendmentor.io
           </p>
@@ -23,7 +23,7 @@ function ShortlyForm() {
             </button>
           </div>
         </div>
-        <div className="bg-white p-6 flex flex-col md:flex-row justify-between items-center rounded-xl">
+        <div className="mx-6 bg-white p-6 flex flex-col md:flex-row justify-between items-center rounded-xl">
           <p className="text-lg font-semibold text-gray-500">
             https://twitter.com/frontendmentor
           </p>
@@ -34,7 +34,7 @@ function ShortlyForm() {
             </button>
           </div>
         </div>
-        <div className="bg-white p-6 flex  flex-col md:flex-row justify-between items-center rounded-xl">
+        <div className="mx-6 bg-white p-6 flex  flex-col md:flex-row justify-between items-center rounded-xl">
           <p className="text-lg font-semibold text-gray-500">
             https://linkedin.com/frontend-mentor
           </p>
