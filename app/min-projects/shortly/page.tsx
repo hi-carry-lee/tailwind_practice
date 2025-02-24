@@ -3,6 +3,8 @@ import Header from "./header";
 import Hero from "./hero";
 import ShortlyForm from "./shortly-form";
 import Advance from "./advance";
+import CallToAction from "./cta";
+import Footer from "./footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,6 +21,8 @@ function Shortly() {
       <Hero container={container} />
       <ShortlyForm />
       <Advance container={container} />
+      <CallToAction />
+      <Footer container={container} />
     </div>
   );
 }

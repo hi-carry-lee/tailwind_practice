@@ -38,6 +38,7 @@ function Advance({ container }: Props) {
             {/* horizontal line */}
             <div className="hidden absolute top-24 w-10/12 ml-16 h-3 bg-cyan-500 md:block"></div>
             {/* vertical line */}
+            {/* 🌻🌼 here, h-full means it will has the same height with its parent. */}
             <div className="absolute w-2 left-1/2 h-full -ml-1 bg-cyan-500 md:hidden"></div>
 
             {/* box 1 */}
