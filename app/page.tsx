@@ -21,6 +21,7 @@ export default function Home() {
         <ProjectLink href="/min-projects/loopstudios">LoopStudios</ProjectLink>
         <ProjectLink href="/min-projects/shortly">Shortly</ProjectLink>
         <ProjectLink href="/min-projects/testimonial">Testimonial</ProjectLink>
+        <ProjectLink href="/min-projects/fylo">Fylo</ProjectLink>
       </div>
     </div>
   );
