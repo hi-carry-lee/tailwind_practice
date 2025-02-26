@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -9,14 +10,22 @@ import logoDark from "@/public/fylo/logo-dark-mode.svg";
 import logoLight from "@/public/fylo/logo-light-mode.svg";
 
 function Header() {
-  // 使用 next-themes 的 useTheme hook
+  const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // 判断是否为暗黑模式
+  // 确保组件已挂载
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // 在组件未挂载时不渲染主题相关内容
+  if (!mounted) {
+    return null;
+  }
+
   const isDarkMode = theme === "dark";
 
   function handleToggleDarkMode() {
-    // 切换主题
     setTheme(isDarkMode ? "light" : "dark");
   }
 
