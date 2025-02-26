@@ -6,7 +6,7 @@ import iconFile from '@/public/fylo/icon-any-file.svg';
 
 function Features() {
   return (
-    <section>
+    <section className="bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid grid-cols-1 gap-x-4 gap-y-20 md:grid-cols-2">
           {/* box 1 */}
